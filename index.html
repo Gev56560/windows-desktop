@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Desktop</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="desktop-root">
+      <div id="desktop-icons" aria-label="Desktop icons"></div>
+      <div id="windows-layer"></div>
+      <div id="notification-center" class="panel hidden"></div>
+      <div id="toast-container"></div>
+      <div id="context-menu" class="context-menu hidden"></div>
+      <div id="start-menu" class="start-menu hidden"></div>
+      <div id="taskbar">
+        <button id="start-button" class="task-button start-button">Start</button>
+        <button id="search-button" class="task-button">Search</button>
+        <div id="taskbar-apps" class="taskbar-apps"></div>
+        <div id="taskbar-right">
+          <div id="tray-icons" class="tray-icons"></div>
+          <div id="taskbar-clock"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
